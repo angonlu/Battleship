@@ -459,4 +459,3 @@ $(".newGameButton").on("click", function(){
     location.reload();
 })
 
-
