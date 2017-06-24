@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>battle</title>
+    <style>
+        body {
+            font-size: 18px;
+            font-family: "Arial Rounded MT Bold";
+        }
+
+        #main {
+            margin: 0 auto;
+            width: 960px;
+            overflow: auto;
+            background: #888;
+            padding: 2em;
+        }
+
+        .wall {
+            width: 5%;
+            margin: 0 5%;
+            float: left;
+            background: #333;
+            min-height: 425px;
+        }
+
+        table {
+            float: left;
+            width: 40%;
+            font-size: 2em;
+            border: 1px solid #ccc;
+            background: #fff;
+        }
+
+        td {
+            border: 1px solid #eee;
+            width: 120px;
+            height: 120px;
+            text-align: center;
+        }
+
+        td:hover {
+            background: #f00;
+        }
+
+        td:active {
+            background: orange;
+        }
+    </style>
+</head>
+<body>
+<div id="main">
+    <table>
+        <tr>
+            <th colspan="3">
+                Player 1
+            </th>
+        </tr>
+        <tr>
+            <td>A1</td>
+            <td>A2</td>
+            <td>A3</td>
+        </tr>
+        <tr>
+            <td>B1</td>
+            <td>B2</td>
+            <td>B3</td>
+        </tr>
+        <tr>
+            <td>C1</td>
+            <td>C2</td>
+            <td>C3</td>
+        </tr>
+    </table>
+    <div class="wall">
+
+    </div>
+    <table>
+        <tr>
+            <th colspan="3">
+                Player 2
+            </th>
+        </tr>
+        <tr>
+            <td>A1</td>
+            <td>A2</td>
+            <td>A3</td>
+        </tr>
+        <tr>
+            <td>B1</td>
+            <td>B2</td>
+            <td>B3</td>
+        </tr>
+        <tr>
+            <td>C1</td>
+            <td>C2</td>
+            <td>C3</td>
+        </tr>
+    </table>
+</div>
+<script>
+    var twoDimensionalArray = [
+        [0, 1, 2, 3],
+        [0, 1, 2, 3],
+        [0, 1, 2, 3],
+        [0, 1, 2, 3],
+    ];
+
+    console.log('entire twoDimensionalArray', twoDimensionalArray);
+    console.log('row 1 col 1 from twoDimensionalArray', twoDimensionalArray[0][0]);
+    console.log('row 2 col 1 from twoDimensionalArray', twoDimensionalArray[1][0]);
+    console.log('row 4 col 34 from twoDimensionalArray', twoDimensionalArray[3][3]);
+
+
+    var twoDimensionalArrayOfLetters = [
+        ['a', 'b', 'c', 'd'],
+        ['a', 'b', 'c', 'd'],
+        ['a', 'b', 'c', 'd'],
+        ['a', 'b', 'c', 'd']
+    ];
+
+    console.log('\n\nentire twoDimensionalArrayOfLetters', twoDimensionalArrayOfLetters);
+    console.log('row 1 col 1 from twoDimensionalArrayOfLetters', twoDimensionalArrayOfLetters[0][0]);
+    console.log('row 2 col 2 from twoDimensionalArrayOfLetters', twoDimensionalArrayOfLetters[1][1]);
+    console.log('row 3 col 3 from twoDimensionalArrayOfLetters', twoDimensionalArrayOfLetters[2][2]);
+
+    var twoDimensionalArrayOfObjects = [
+        [
+            {col: 'a', hasShip: false},
+            {col: 'b', hasShip: false},
+            {col: 'c', hasShip: false}
+        ],
+        [
+            {col: 'a', hasShip: false},
+            {col: 'b', hasShip: true},
+            {col: 'c', hasShip: false}
+        ],
+        [
+            {col: 'a', hasShip: true},
+            {col: 'b', hasShip: false},
+            {col: 'c', hasShip: false}
+        ],
+        [
+            {col: 'a', hasShip: true},
+            {col: 'b', hasShip: false},
+            {col: 'c', hasShip: false}
+        ]
+    ];
+
+    console.log('\n\nentire twoDimensionalArrayOfObjects', twoDimensionalArrayOfObjects);
+    console.log('row 1 col 1 from twoDimensionalArrayOfObjects', twoDimensionalArrayOfObjects[0][0]);
+    console.log('row 2 col 2 from twoDimensionalArrayOfObjects', twoDimensionalArrayOfObjects[1][2]);
+    console.log('row 3 col 3 from twoDimensionalArrayOfObjects', twoDimensionalArrayOfObjects[2][2]);
+</script>
+</body>
+</html>
