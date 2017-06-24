@@ -455,4 +455,8 @@ function playGame() {
     })
 }
 
+$(".newGameButton").on("click", function(){
+    location.reload();
+})
+
 
